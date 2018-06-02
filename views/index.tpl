@@ -29,7 +29,7 @@
   </body>
   <script type="text/javascript">
 
-    var host = "localhost:8000";
+    var host = location.host;
     var url = "ws://"+host+"/websocket";
 
     var ws = new WebSocket(url);
