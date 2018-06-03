@@ -18,4 +18,5 @@ ADD requirements.txt ${app_path}
 RUN pip3 install -r ${app_path}/requirements.txt
 
 EXPOSE 80
+EXPOSE 443
 CMD ["bash","-c","cd /opt/app/ && python3 api.py"]
